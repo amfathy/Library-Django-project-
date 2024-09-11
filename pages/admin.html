@@ -1,0 +1,33 @@
+{% load static %}
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Login Page</title>
+        <meta charset="utf-8">
+        <link rel="stylesheet" href="{% static 'css/admin.css' %}">
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+        <link href="https://fonts.googleapis.com/css2?family=Cairo&display=swap" rel="stylesheet">
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+        <link href="https://fonts.googleapis.com/css2?family=Lobster&family=Noto+Sans+HK:wght@300&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    </head>
+    <body>
+        <div id="container">
+            <div class="form">
+                <form action="" class="sign-in" method= "POST"> {% csrf_token %}
+                    <h2 class="title">Sign in</h2>
+                    <div class="input-field">
+                        <i class="glyphicon glyphicon-user"></i>
+                        <input type="text" placeholder="Username" name="username" required autocomplete="off">
+                    </div>
+                    <div class="input-field">
+                        <i class="glyphicon glyphicon-lock"></i>
+                        <input type="password" placeholder="Password" name="password" required>
+                    </div>
+                    <input type="submit" class="btn-login" value="Login">
+                    <a href="signup" class="btn-signup"> Sign up</a>
+                </form>
+            </div>
+        </div>
+    </body>
+</html>

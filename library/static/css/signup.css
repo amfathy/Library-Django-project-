@@ -1,0 +1,153 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; 
+}
+
+body, html {
+  height: 100%;
+  width: 100%;
+  background-image: url(../imgs/2.jpg);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.container {
+  text-align: center;
+  height: 100px;
+  width: auto;
+  
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.title {
+  font-family: Cairo;
+  font-size: 30px;
+  margin-top: 150px;
+  margin-bottom: 20px;
+  color: #ffffff;
+}
+
+.input-field {
+  max-width: 300px;
+  width: 100%;
+  height: 55px;
+  background-color: #000000a6;
+  margin: 10px 0;
+  border-radius: 55px;
+  display: grid;
+  grid-template-columns: 15% 85%;
+  padding: 0 0.4em;
+  position: relative;
+}
+
+.input-field input:placeholder-shown {
+  font-family: cursive;
+  font-weight: 500;
+}
+
+.input-field input::placeholder {
+  color: #fff6f6;
+}
+
+.input-field i {
+  text-align: center;
+  line-height: 50px;
+  color: #ffffff;
+  font-size: 15px;
+}
+
+.input-field label {
+  text-align: center;
+  line-height: 50px;
+  color: #ffffff;
+  font-size: 15px;
+}
+
+.input-field input {
+  background: none;
+  border: none;
+  outline: none;
+  line-height: 1;
+  font-family: Cairo;
+  font-weight: bold;
+  font-size: 15px;
+  color: #ffffff;
+}
+
+.input-field input[type = "date"] {
+  color: #ffffff;
+}
+
+.input-field select {
+  background: none;
+  border: none;
+  outline: none;
+  color: #ffffff;
+  font-size: 15px;
+  font-weight: bold;
+  font-family: Cairo;
+}
+
+.input-field select option {
+  color: #000000;
+  font-family: Cairo;
+}
+
+.btn-signup {
+  width: 100px;
+  height: 40px;
+  margin: 10px 0;
+  outline: none;
+  border: none;
+  border-radius: 30px;
+  background-color: #ffffff;
+  color: black;
+  text-transform: uppercase;
+  font-family: Cairo;
+  font-weight: bold;   
+}
+
+.btn-signup:hover {
+  background-color: black;
+  color: white;
+}
+.btn-signup:active {
+  background-color: #b41b1b86;
+  color: white;
+}
+
+.btn-home {
+  width: 100px;
+  height: 40px;
+  padding: 10px 20px;
+  text-decoration: none;
+  border: none;
+  outline: none;
+  border-radius: 30px;
+  background-color: black;
+  color: #ffffff;
+  text-transform: uppercase;
+  font-family: Cairo;
+  font-weight: bold;
+}
+
+.btn-home:hover {
+  text-decoration: none;
+  background-color: #ffffff;
+  color: black;
+}
+
+.btn-home:active {
+  background-color: #b41b1b86;
+  color: white;
+}
+
+

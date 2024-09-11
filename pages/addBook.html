@@ -1,0 +1,63 @@
+{%load static%}
+{% load bootstrap_icons %}
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <title>Add Book</title>
+        <meta charset="utf-8">
+        <link rel="stylesheet" href="{% static 'css/addbook.css' %}">
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+        <link href="https://fonts.googleapis.com/css2?family=Cairo&display=swap" rel="stylesheet">
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+        <link href="https://fonts.googleapis.com/css2?family=Lobster&family=Noto+Sans+HK:wght@300&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    </head>
+    <body>
+        <div class="container">
+            <form action="" method = "POST"> {% csrf_token %}
+                <h2 class="title">Add Book Details</h2>
+                <div class="input-field">
+                <i class="glyphicon glyphicon-lock"></i>
+                    {{bookForm.name}}
+                </div>
+
+                <div class="input-field">
+                    <i class="glyphicon glyphicon-lock"></i>
+                    {{bookForm.ISBN}}
+                </div>
+
+                <div class="input-field">
+                    <i class="glyphicon glyphicon-lock"></i>
+                    {{bookForm.publication_year}}
+                </div>
+
+                <div class="input-field">
+                    <i class="glyphicon glyphicon-lock"></i>
+                    {{bookForm.author}}
+                </div>
+
+                <div class="input-field">
+                    <i class="glyphicon glyphicon-lock">CATE.</i>
+                    {{bookForm.category}}
+                </div>
+
+                <div class="input-field">
+                    <i class="glyphicon glyphicon-lock"></i>
+                    {{bookForm.status}}
+                </div>
+                
+
+                <div class="input-field">
+                    <i class="glyphicon glyphicon-lock"></i>
+                    {{bookForm.price}}
+                </div>
+                
+
+
+                <input type="submit" class="btn-add" value="Add">
+                <a href="adminhome" class="btn-cancel">Cancel</a>
+            </form>
+        </div>
+    </body>
+</html>

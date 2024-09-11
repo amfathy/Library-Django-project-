@@ -1,0 +1,69 @@
+* {  
+    padding: 0; 
+    margin:auto
+}
+
+body {
+    background-image: url('../imgs/wall3.jpg'); 
+    font-family: 'Montserrat', sans-serif;
+}
+
+#main {
+     margin-top: 10px; 
+     text-align: center; 
+     width:35%; 
+     clear: both;
+}
+
+h2 { 
+    text-shadow: 1px 1px white; 
+    text-transform:uppercase; 
+    color: white; 
+    font-size: 27px; 
+    margin: 10px 0px 10px 0px; 
+    border-left: 17px black solid; 
+    padding: 7px 0px 7px 25px;
+}
+
+#bu1, #bu2, #bu3, #bu4 {
+    width: 100%;    
+    border-radius: 0px;  
+    box-shadow: inset 0 0 0 0 white; 
+    -webkit-transition: ease-out 0.4s; 
+    -moz-transition: ease-out 0.4s; 
+    transition: ease-out 0.4s; 
+    float: right; 
+    display: block; 
+    cursor:pointer;  
+    margin-top: 30px;  
+    font-size: 27px; 
+    border:0;
+    border:7px solid white; 
+    background: none;
+}
+
+#bu1:hover, #bu2:hover, #bu3:hover, #bu4:hover {
+    box-shadow: inset 600px 0 0 0 white;  
+}
+.prop {
+    text-decoration:none; 
+    color: white; 
+    text-shadow: 1px 1px black;  
+    display: block; 
+    padding:17px 12px 17px 12px;
+}
+
+#bu5 {
+    border:0; 
+    cursor:pointer; 
+    padding:11px 17px 11px 17px; 
+    margin-top: 30px; 
+    width: 40%; 
+    font-size: 16px; 
+    border-radius: 5px;
+}
+
+#bu5 a {
+    text-decoration:none; 
+    color:black;
+}
